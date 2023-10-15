@@ -31,7 +31,7 @@ public class StarbuzzDatabaseHelper extends SQLiteOpenHelper {
         drinkValues.put("NAME", name);
         drinkValues.put("DESCRIPTION", description);
         drinkValues.put("IMAGE_RESOURCE_ID", resourceId);
-        db.insert(DB_NAME, null, drinkValues);
+        db.insert("DRINK", null, drinkValues);
     }
 
     private void updateMyDatabase(SQLiteDatabase db, int oldVersion, int newVersion) {
